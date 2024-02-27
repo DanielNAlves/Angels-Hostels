@@ -1,0 +1,35 @@
+:root {
+  --primaryColor: #7c24ce;
+  --primaryColorFont: #ffffff;
+  --secundaryColor: #000;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  box-sizing: border-box;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.nav_header {
+  background-color: #7c24ce;
+  text-align: center;
+  color: var(--secundaryColor);
+}
+
+.nav_header li {
+  list-style-type: none;
+  margin-bottom: 2.3rem;
+  padding: 0.4rem;
+}
+
+.nav_header li:hover {
+  background: #b0b0b0;
+}
+
+.nav_header a {
+  text-decoration: none;
+  color: var(--primaryColorFont);
+}
