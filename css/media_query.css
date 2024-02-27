@@ -1,0 +1,35 @@
+@media screen and (min-width: 45rem) {
+  .header_menu {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .header_menu {
+    flex-direction: row;
+    padding: 0 2rem;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  .nav_header {
+    background-color: var(--primaryColorFont);
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+  }
+
+  .nav_header ul {
+    margin-top: 5rem;
+  }
+
+  .nav_header li {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+
+  .nav_header a {
+    text-decoration: none;
+    color: var(--secundaryColor);
+  }
+}
