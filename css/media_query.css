@@ -1,35 +1,83 @@
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 48.75rem) {
   .header_menu {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image__header {
+    margin-left: 1.5rem;
+  }
+
+  .nav__menu {
+    background: initial;
+  }
+
+  .nav__menu li {
+    display: inline-block;
+  }
+
+  .nav__menu a {
+    color: var(--primaryColor);
+  }
+
+  .nav__menu a:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--primaryColor),
+      var(--primaryColorFont) 85%
+    );
   }
 }
 
-@media screen and (min-width: 50rem) {
-  .header_menu {
-    flex-direction: row;
-    padding: 0 2rem;
-    flex-grow: 1;
-    flex-basis: auto;
+@media screen and (min-width: 48.75rem) {
+  .heroBanner {
+    background-color: var(--primaryColor);
+    color: var(--primaryColorFont);
   }
 
-  .nav_header {
-    background-color: var(--primaryColorFont);
-    text-align: center;
-    color: #000;
-    font-size: 2rem;
+  .heroBanner_title,
+  .heroBanner_subtitle {
+    color: var(--primaryColorFont);
   }
 
-  .nav_header ul {
-    margin-top: 5rem;
+  .heroBanner_iconPlay {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 56.25rem) {
+  .heroBanner {
+    background-image: url(../assets/images/bg_topo_1198x670.jpg);
+    aspect-ratio: 1198 / 670;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 
-  .nav_header li {
-    display: inline-block;
-    padding: 0 2rem;
+  .heroBanner .max__width {
+    margin: initial;
+    margin-bottom: 4rem;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 74rem) {
+  .heroBanner {
+    background-image: url(../assets/images/bg_topo_1600x1374.jpg);
+    background-position: center top;
+    background-color: var(--primaryColor);
+    background-repeat: no-repeat;
+    max-height: 80vh;
+    width: 100%;
   }
 
-  .nav_header a {
-    text-decoration: none;
-    color: var(--secundaryColor);
+  .heroBanner .max__width {
+    width: 50%;
+  }
+
+  .heroBanner_iconPlay {
+    width: 7rem;
+    height: 7rem;
   }
 }
