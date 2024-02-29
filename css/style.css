@@ -1,35 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+
 :root {
-  --primaryColor: #7c24ce;
+  --primaryColor: #612674;
   --primaryColorFont: #ffffff;
   --secundaryColor: #000;
 }
 
+html {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oxygen", sans-serif;
+}
+
+.max__width {
+  width: 70.25em;
+  margin: auto;
+}
+
 .header_menu {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  box-sizing: border-box;
-  gap: 1rem;
-  font-size: 1.8rem;
-}
-
-.nav_header {
-  background-color: #7c24ce;
   text-align: center;
-  color: var(--secundaryColor);
+  width: 100%;
 }
 
-.nav_header li {
+.nav__menu {
+  background-color: var(--primaryColor);
+}
+
+.nav__menu ul {
   list-style-type: none;
-  margin-bottom: 2.3rem;
-  padding: 0.4rem;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.nav_header li:hover {
-  background: #b0b0b0;
-}
-
-.nav_header a {
+.nav__menu a {
   text-decoration: none;
   color: var(--primaryColorFont);
+  display: block;
+  padding: 1rem;
+}
+
+.nav__menu a:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--primaryColor),
+    var(--primaryColorFont) 10%
+  );
+}
+
+/*Hero Banner*/
+
+.heroBanner {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 1rem;
+}
+
+.heroBanner_iconPlay {
+  height: 5rem;
+  width: 5rem;
+  display: none;
+}
+
+.heroBanner_iconPlay img {
+  width: 100%;
+}
+
+.heroBanner_title {
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.heroBanner_subtitle {
+  font-size: 1rem;
+  color: color-mix(in srgb, var(--primaryColor), var(--primaryColorFont));
+  line-height: 1.5rem;
+}
+
+.heroBanner_btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: #58c4c4;
+  text-decoration: none;
+  color: var(--primaryColorFont);
+  border-radius: 0.5rem;
 }
