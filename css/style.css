@@ -132,3 +132,38 @@ h4 {
 .col-sm-12 {
   width: 100%;
 }
+
+.mainContent {
+  padding: 2rem;
+}
+
+.mainContent p {
+  line-height: 1.2;
+}
+
+.mainContent_img img {
+  width: 100%;
+}
+
+.mainContent_title {
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+  font-size: 1.25rem;
+}
+
+.mainContent .row {
+  row-gap: 4rem;
+}
+
+.mainContent_article {
+  container: mainContent / inline-size;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #272f3e;
+  color: #778399;
+}
