@@ -98,4 +98,23 @@
   .col-xl-3 {
     width: calc(25% - var(--default-gap));
   }
+
+  .col-xl-6 {
+    width: calc(50% - var(--default-gap));
+  }
+}
+
+@container mainContent (min-width: 31.25rem) {
+  .mainContent_container {
+    display: flex;
+    gap: var(--default-gap);
+  }
+
+  .mainContent_title {
+    margin-top: 0;
+  }
+
+  .mainContent_img img {
+    max-height: 182px;
+  }
 }
