@@ -4,6 +4,7 @@
   --primaryColor: #612674;
   --primaryColorFont: #ffffff;
   --secundaryColor: #000;
+  --default-gap: 1rem;
 }
 
 html {
@@ -89,4 +90,45 @@ h4 {
   text-decoration: none;
   color: var(--primaryColorFont);
   border-radius: 0.5rem;
+}
+
+.middleContent {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 2rem;
+}
+
+.middleContent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.middleContent_title {
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.middleContent span[class^="icon-"] {
+  color: var(--primaryColor);
+  font-size: 3.5rem;
+}
+
+.middleContent p {
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--default-gap);
+}
+
+.col {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.col-sm-12 {
+  width: 100%;
 }
